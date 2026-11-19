@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRONOS DRIVE</title>
+  <meta name="description" content="KRONOS DRIVE avtosalonida zamonaviy avtomobillar, texnik xususiyatlar va tezkor sinov haydovi so'rovi.">
+  <meta name="theme-color" content="#0c0d10">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="KRONOS DRIVE">
+  <meta property="og:locale" content="uz_UZ">
+  <meta property="og:title" content="KRONOS DRIVE — Avtosalon">
+  <meta property="og:description" content="KRONOS DRIVE avtosalonida zamonaviy avtomobillar, texnik xususiyatlar va tezkor sinov haydovi so'rovi.">
+  <meta property="og:url" content="https://USERNAME.github.io/REPO/">
+  <meta property="og:image" content="https://USERNAME.github.io/REPO/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="rasm">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KRONOS DRIVE — Avtosalon">
+  <meta name="twitter:description" content="KRONOS DRIVE avtosalonida zamonaviy avtomobillar, texnik xususiyatlar va tezkor sinov haydovi so'rovi.">
+  <meta name="twitter:image" content="https://USERNAME.github.io/REPO/og-image.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Manrope:wght@400;500;600;700&family=Oxanium:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="imgs/icon.png">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-ring"></div>
+    <i class="fa-solid fa-car-side loader-car"></i>
+    <div class="loader-brand">KRONOS DRIVE</div>
+    <div class="loader-bar">
+      <div id="barFill" class="loader-bar-fill"></div>
+    </div>
+    <div class="loader-status">
+      <i class="fa-solid fa-spinner fa-spin"></i>
+      <span>Yuklanmoqda...</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <i class="fa-solid fa-car-side"></i>
+        <span>KRONOS DRIVE</span>
+      </a>
+      <nav id="nav" class="nav">
+        <a href="#cars" onclick="toggleMenu('nav')">Avtomobillar</a>
+        <a href="#compare" onclick="toggleMenu('nav')">Taqqoslash</a>
+        <a href="#finance" onclick="toggleMenu('nav')">To'lov</a>
+        <a href="#process" onclick="toggleMenu('nav')">Jarayon</a>
+        <a href="#reviews" onclick="toggleMenu('nav')">Fikrlar</a>
+        <a href="#contact" onclick="toggleMenu('nav')">Aloqa</a>
+        <a href="#faq" onclick="toggleMenu('nav')">Savollar</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="cart-btn" onclick="toggleMenu('cart')">
+          <i class="fa-solid fa-car-side"></i>
+          <span id="carCount" class="cart-badge">0</span>
+        </button>
+        <button type="button" class="burger-btn" onclick="toggleMenu('nav')">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="section-pill">Yangi avlod avtomobillar</div>
+          <h1 class="hero-title">
+            <span class="grad-text">TEZLIK</span>
+            <span class="outline-text">ANIQLIGI</span>
+          </h1>
+          <p class="hero-desc">
+            Har bir burilishda aniq boshqaruv, ishonchli dinamika va rasmiy kafolat bilan tanlangan avtomobillar.
+          </p>
+          <div class="hero-btns">
+            <a href="#cars" class="btn btn-primary">Avtomobillarni ko'rish</a>
+            <a href="#contact" class="btn btn-ghost">Sinov haydovi</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <i class="fa-solid fa-gauge-high"></i>
+              <span>8 ta model</span>
+            </div>
+            <div class="hero-stat">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Rasmiy kafolat</span>
+            </div>
+            <div class="hero-stat">
+              <i class="fa-solid fa-percent"></i>
+              <span>Lizing va kredit</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="speedometer">
+            <div class="speedo-arc"></div>
+            <div class="speedo-ticks"></div>
+            <div class="speedo-needle"></div>
+            <div class="speedo-center"></div>
+          </div>
+          <div class="hero-car-wrap">
+            <img src="imgs/avto-hero.jpg" alt="rasm" class="hero-car">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap">
+      <div class="marquee-track">
+        <span>Sedan · Krossover · Elektr · Jip</span>
+        <span>Sedan · Krossover · Elektr · Jip</span>
+        <span>Sedan · Krossover · Elektr · Jip</span>
+        <span>Sedan · Krossover · Elektr · Jip</span>
+      </div>
+    </div>
+
+    <div class="road-divider"></div>
+
+    <section id="cars" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">01 / Avtomobillar</span>
+          <h2 class="section-title">
+            <span class="grad-text">TANLANGAN</span>
+            <span class="outline-text">MODELLAR</span>
+          </h2>
+          <p class="section-desc">
+            Shahar va uzoq safarlar uchun mos keladigan sakkizta tekshirilgan avtomobil modeli.
+          </p>
+        </div>
+
+        <div class="filters">
+          <button type="button" class="filter-btn" onclick="filterCars('all')">Hammasi</button>
+          <button type="button" class="filter-btn" onclick="filterCars('sedan')">Sedan</button>
+          <button type="button" class="filter-btn" onclick="filterCars('suv')">Krossover</button>
+          <button type="button" class="filter-btn" onclick="filterCars('electric')">Elektr</button>
+          <button type="button" class="filter-btn" onclick="filterCars('jeep')">Jip</button>
+        </div>
+
+        <div class="cars-grid">
+          <article class="car-card" data-type="sedan">
+            <div class="car-media">
+              <img src="imgs/avto01.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Chevrolet Malibu XL</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">385 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>2.0L Turbo</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>238 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>7.4 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>9-AT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-1" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Chevrolet Malibu XL" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="sedan">
+            <div class="car-media">
+              <img src="imgs/avto02.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Kia K5 GT-Line</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">410 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>2.5L GDI</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>194 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>7.1 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>8-AT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-2" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Kia K5 GT-Line" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="suv">
+            <div class="car-media">
+              <img src="imgs/avto03.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Hyundai Tucson</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">445 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>2.0L MPI</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>156 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>7.8 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>6-AT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-3" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Hyundai Tucson" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="suv">
+            <div class="car-media">
+              <img src="imgs/avto04.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Chery Tiggo 8 Pro</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">398 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>1.6L TGDI</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>197 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>7.6 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>7-DCT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-4" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Chery Tiggo 8 Pro" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="electric">
+            <div class="car-media">
+              <img src="imgs/avto05.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">BYD Han EV</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">465 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-bolt"></i>85.4 kWh</span>
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>245 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-road"></i>605 km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>1-Speed</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-5" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="BYD Han EV" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="electric">
+            <div class="car-media">
+              <img src="imgs/avto06.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">BYD Song Plus EV</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">362 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-bolt"></i>71.8 kWh</span>
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>204 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-road"></i>520 km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>1-Speed</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-6" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="BYD Song Plus EV" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="jeep">
+            <div class="car-media">
+              <img src="imgs/avto07.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Kia Sorento X-Line</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">535 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>2.5L Turbo</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>281 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>8.6 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>8-DCT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-7" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Kia Sorento X-Line" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-card" data-type="jeep">
+            <div class="car-media">
+              <img src="imgs/avto08.jpg" alt="rasm" loading="lazy">
+            </div>
+            <div class="car-body">
+              <div class="car-top">
+                <h3 class="car-name">Hyundai Palisade</h3>
+                <span class="car-year">2025</span>
+              </div>
+              <div class="car-price">640 000 000 so'm</div>
+              <div class="car-chips">
+                <span class="chip"><i class="fa-solid fa-gauge-high"></i>3.5L V6</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>277 o.k.</span>
+                <span class="chip"><i class="fa-solid fa-gas-pump"></i>10.2 L/100km</span>
+                <span class="chip"><i class="fa-solid fa-gears"></i>8-AT</span>
+              </div>
+              <div class="car-actions">
+                <a href="#oyna-8" class="btn btn-ghost">Batafsil</a>
+                <button type="button" class="btn btn-primary" data-name="Hyundai Palisade" onclick="addCar(this)">Sinov haydovi</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="compare" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">02 / Taqqoslash</span>
+          <h2 class="section-title">
+            <span class="grad-text">TEXNIK</span>
+            <span class="outline-text">JADVAL</span>
+          </h2>
+          <p class="section-desc">
+            Barcha modellarning asosiy ko'rsatkichlarini yonma-yon solishtiring.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Xususiyat</th>
+                <th>Malibu XL</th>
+                <th>Kia K5</th>
+                <th>Tucson</th>
+                <th>Tiggo 8 Pro</th>
+                <th>BYD Han EV</th>
+                <th>Song Plus EV</th>
+                <th>Sorento</th>
+                <th>Palisade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Narx</td>
+                <td>385 000 000 so'm</td>
+                <td>410 000 000 so'm</td>
+                <td>445 000 000 so'm</td>
+                <td>398 000 000 so'm</td>
+                <td>465 000 000 so'm</td>
+                <td><span class="badge-highlight">362 000 000 so'm</span></td>
+                <td>535 000 000 so'm</td>
+                <td>640 000 000 so'm</td>
+              </tr>
+              <tr>
+                <td>Dvigatel</td>
+                <td>2.0L Turbo</td>
+                <td>2.5L GDI</td>
+                <td>2.0L MPI</td>
+                <td>1.6L TGDI</td>
+                <td>85.4 kWh</td>
+                <td>71.8 kWh</td>
+                <td>2.5L Turbo</td>
+                <td>3.5L V6</td>
+              </tr>
+              <tr>
+                <td>Quvvat</td>
+                <td>238 o.k.</td>
+                <td>194 o.k.</td>
+                <td>156 o.k.</td>
+                <td>197 o.k.</td>
+                <td>245 o.k.</td>
+                <td>204 o.k.</td>
+                <td><span class="badge-highlight">281 o.k.</span></td>
+                <td>277 o.k.</td>
+              </tr>
+              <tr>
+                <td>Sarf / Masofa</td>
+                <td>7.4 L/100km</td>
+                <td>7.1 L/100km</td>
+                <td>7.8 L/100km</td>
+                <td>7.6 L/100km</td>
+                <td>605 km</td>
+                <td>520 km</td>
+                <td>8.6 L/100km</td>
+                <td>10.2 L/100km</td>
+              </tr>
+              <tr>
+                <td>Uzatma</td>
+                <td>9-AT</td>
+                <td>8-AT</td>
+                <td>6-AT</td>
+                <td>7-DCT</td>
+                <td>1-Speed</td>
+                <td>1-Speed</td>
+                <td>8-DCT</td>
+                <td>8-AT</td>
+              </tr>
+              <tr>
+                <td>Yuritma</td>
+                <td>Oldi (FWD)</td>
+                <td>Oldi (FWD)</td>
+                <td>To'liq (AWD)</td>
+                <td>Oldi (FWD)</td>
+                <td>Oldi (FWD)</td>
+                <td>Oldi (FWD)</td>
+                <td>To'liq (AWD)</td>
+                <td>To'liq (AWD)</td>
+              </tr>
+              <tr>
+                <td>O'rindiq</td>
+                <td>5 o'rin</td>
+                <td>5 o'rin</td>
+                <td>5 o'rin</td>
+                <td>7 o'rin</td>
+                <td>5 o'rin</td>
+                <td>5 o'rin</td>
+                <td>7 o'rin</td>
+                <td>7 o'rin</td>
+              </tr>
+              <tr>
+                <td>Kafolat</td>
+                <td>3 yil / 100 000 km</td>
+                <td>5 yil / 150 000 km</td>
+                <td>5 yil / 100 000 km</td>
+                <td>5 yil / 150 000 km</td>
+                <td>6 yil / 150 000 km</td>
+                <td>6 yil / 150 000 km</td>
+                <td>5 yil / 150 000 km</td>
+                <td>5 yil / 100 000 km</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="finance" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">03 / Qulay to'lov</span>
+          <h2 class="section-title">
+            <span class="grad-text">MOLIYAVIY</span>
+            <span class="outline-text">IMKONIYAT</span>
+          </h2>
+          <p class="section-desc">
+            Byudjetingizga mos keladigan moslashuvchan to'lov va xizmat yechimlari.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-card bento-a">
+            <div class="bento-top">
+              <h3>Lizing va kredit</h3>
+              <p>Hamkor banklar va lizing tashkilotlari orqali tez rasmiylashtiriladigan qulay moliyaviy rejalar.</p>
+              <div class="bento-chips">
+                <span class="chip"><i class="fa-solid fa-percent"></i>Boshlang'ich to'lov 20% dan</span>
+                <span class="chip"><i class="fa-solid fa-calendar"></i>12-60 oygacha</span>
+                <span class="chip"><i class="fa-solid fa-bolt"></i>Tez ma'qullash</span>
+              </div>
+            </div>
+            <div class="bento-bottom">
+              <span class="bento-big-outline">0%</span>
+              <span class="bento-big-label">ko'rib chiqish to'lovi</span>
+            </div>
+          </div>
+
+          <div class="bento-card bento-b">
+            <i class="fa-solid fa-handshake bento-icon"></i>
+            <h3>Trade-in</h3>
+            <p>Eski avtomobilingizni baholab, yangi modelga qulay farq bilan almashtiring.</p>
+          </div>
+
+          <div class="bento-card bento-c">
+            <i class="fa-solid fa-medal bento-icon"></i>
+            <h3>Rasmiy kafolat</h3>
+            <p>Ishlab chiqaruvchi tomonidan tasdiqlangan servis kafolati va original ehtiyot qismlar.</p>
+          </div>
+
+          <div class="bento-card bento-d">
+            <i class="fa-solid fa-wrench bento-icon"></i>
+            <h3>Bepul servis</h3>
+            <p>Dastlabki texnik ko'rik va diagnostika xizmatlari reja asosida taqdim etiladi.</p>
+          </div>
+
+          <div class="bento-card bento-e">
+            <i class="fa-solid fa-shield-halved bento-icon"></i>
+            <h3>Sug'urta</h3>
+            <p>Avtomobil va haydovchi uchun to'liq sug'urta polisini salonning o'zida rasmiylashtiring.</p>
+          </div>
+
+          <div class="bento-card bento-f">
+            <div class="stat-box">
+              <strong class="grad-text">3 500+</strong>
+              <span>sotilgan avtomobil</span>
+            </div>
+            <div class="stat-box">
+              <strong class="grad-text">8</strong>
+              <span>model</span>
+            </div>
+            <div class="stat-box">
+              <strong class="grad-text">24 soat</strong>
+              <span>ichida javob</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">04 / Jarayon</span>
+          <h2 class="section-title">
+            <span class="grad-text">QANDAY</span>
+            <span class="outline-text">SOTIB OLINADI</span>
+          </h2>
+          <p class="section-desc">
+            Avtomobil tanlashdan kalitni qo'lga olishgacha bo'lgan aniq besh bosqich.
+          </p>
+        </div>
+
+        <div class="zigzag">
+          <div class="step-row left">
+            <div class="step-card">
+              <div class="step-num">01</div>
+              <i class="fa-solid fa-file-pen step-icon"></i>
+              <h3>So'rov yuborildi</h3>
+              <p>Onlayn forma yoki tanlov paneli orqali qulay vaqt va modelni ko'rsatib so'rov qoldirasiz.</p>
+            </div>
+          </div>
+          <div class="curve-connector curve-right"></div>
+
+          <div class="step-row right">
+            <div class="step-card">
+              <div class="step-num">02</div>
+              <i class="fa-solid fa-car-side step-icon"></i>
+              <h3>Avtomobil tanlandi</h3>
+              <p>Mutaxassis yordamida komplektatsiya, rang va to'lov usulini aniq belgilab olasiz.</p>
+            </div>
+          </div>
+          <div class="curve-connector curve-left"></div>
+
+          <div class="step-row left">
+            <div class="step-card">
+              <div class="step-num">03</div>
+              <i class="fa-solid fa-car-on step-icon"></i>
+              <h3>Sinov haydovi</h3>
+              <p>Avtomobilning yurish dinamikasi, qulayligi va boshqaruvini haqiqiy yo'lda sinab ko'rasiz.</p>
+            </div>
+          </div>
+          <div class="curve-connector curve-right"></div>
+
+          <div class="step-row right">
+            <div class="step-card">
+              <div class="step-num">04</div>
+              <i class="fa-solid fa-file-signature step-icon"></i>
+              <h3>Shartnoma imzolandi</h3>
+              <p>Shaffof shartlar asosida rasmiy oldi-sotdi yoki moliyalashtirish shartnomasi rasmiylashtiriladi.</p>
+            </div>
+          </div>
+          <div class="curve-connector curve-left"></div>
+
+          <div class="step-row left">
+            <div class="step-card">
+              <div class="step-num">05</div>
+              <i class="fa-solid fa-flag-checkered step-icon"></i>
+              <h3>Kalitlar topshirildi</h3>
+              <p>To'liq texnik tekshiruvdan o'tgan avtomobil kalitlari va hujjatlari sizga topshiriladi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">05 / Mijozlar fikri</span>
+          <h2 class="section-title">
+            <span class="grad-text">MIJOZLAR</span>
+            <span class="outline-text">FIKRI</span>
+          </h2>
+          <p class="section-desc">
+            KRONOS DRIVE orqali avtomobil xarid qilgan xaridorlarning haqiqiy taassurotlari.
+          </p>
+        </div>
+
+        <div class="reviews-viewport">
+          <div class="reviews-tracker">
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Sinov haydovidan keyin barcha savollarimga aniq javob oldim. Hujjatlar bir kunda tayyor bo'ldi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">A</span>
+                <div>
+                  <strong>Azizbek Karimov</strong>
+                  <span>Toshkent · Chevrolet Malibu XL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Eski mashinamni trade-in orqali topshirib, yangi krossoverni ortiqcha ovvoragarchiliksiz oldim.</p>
+              <div class="review-author">
+                <span class="avatar-letter">S</span>
+                <div>
+                  <strong>Sardorbek Rasulov</strong>
+                  <span>Samarqand · Hyundai Tucson</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Elektromobilning zaryad masofasi va boshqaruvi kutganimdan ham a'lo darajada chiqdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">M</span>
+                <div>
+                  <strong>Madina Tursunova</strong>
+                  <span>Namangan · BYD Han EV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Oila uchun keng va qudratli avtomobil izlagandik, menejerlar eng maqbul variantni ko'rsatishdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">J</span>
+                <div>
+                  <strong>Javohir Alimov</strong>
+                  <span>Buxoro · Hyundai Palisade</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Sinov haydovidan keyin barcha savollarimga aniq javob oldim. Hujjatlar bir kunda tayyor bo'ldi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">A</span>
+                <div>
+                  <strong>Azizbek Karimov</strong>
+                  <span>Toshkent · Chevrolet Malibu XL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Eski mashinamni trade-in orqali topshirib, yangi krossoverni ortiqcha ovvoragarchiliksiz oldim.</p>
+              <div class="review-author">
+                <span class="avatar-letter">S</span>
+                <div>
+                  <strong>Sardorbek Rasulov</strong>
+                  <span>Samarqand · Hyundai Tucson</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Elektromobilning zaryad masofasi va boshqaruvi kutganimdan ham a'lo darajada chiqdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">M</span>
+                <div>
+                  <strong>Madina Tursunova</strong>
+                  <span>Namangan · BYD Han EV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Oila uchun keng va qudratli avtomobil izlagandik, menejerlar eng maqbul variantni ko'rsatishdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">J</span>
+                <div>
+                  <strong>Javohir Alimov</strong>
+                  <span>Buxoro · Hyundai Palisade</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Sinov haydovidan keyin barcha savollarimga aniq javob oldim. Hujjatlar bir kunda tayyor bo'ldi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">A</span>
+                <div>
+                  <strong>Azizbek Karimov</strong>
+                  <span>Toshkent · Chevrolet Malibu XL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Eski mashinamni trade-in orqali topshirib, yangi krossoverni ortiqcha ovvoragarchiliksiz oldim.</p>
+              <div class="review-author">
+                <span class="avatar-letter">S</span>
+                <div>
+                  <strong>Sardorbek Rasulov</strong>
+                  <span>Samarqand · Hyundai Tucson</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Elektromobilning zaryad masofasi va boshqaruvi kutganimdan ham a'lo darajada chiqdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">M</span>
+                <div>
+                  <strong>Madina Tursunova</strong>
+                  <span>Namangan · BYD Han EV</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">Oila uchun keng va qudratli avtomobil izlagandik, menejerlar eng maqbul variantni ko'rsatishdi.</p>
+              <div class="review-author">
+                <span class="avatar-letter">J</span>
+                <div>
+                  <strong>Javohir Alimov</strong>
+                  <span>Buxoro · Hyundai Palisade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">06 / Aloqa</span>
+          <h2 class="section-title">
+            <span class="grad-text">SINOV</span>
+            <span class="outline-text">HAYDOVI</span>
+          </h2>
+          <p class="section-desc">
+            O'zingizga qulay sana va modelni tanlab, sinov haydovi uchun ariza yuboring.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" onsubmit="showMessage('Arizangiz qabul qilindi', 'success'); this.reset(); return false;">
+            <div class="form-group">
+              <label for="userName">Ismingiz</label>
+              <input id="userName" type="text" required placeholder="Ism familiyangiz">
+            </div>
+            <div class="form-group">
+              <label for="userPhone">Telefon raqami</label>
+              <input id="userPhone" type="number" required placeholder="+998 90 123 45 67">
+            </div>
+            <div class="form-group">
+              <label for="userCar">Qiziqqan avtomobil</label>
+              <select id="userCar">
+                <option value="Chevrolet Malibu XL">Chevrolet Malibu XL</option>
+                <option value="Kia K5 GT-Line">Kia K5 GT-Line</option>
+                <option value="Hyundai Tucson">Hyundai Tucson</option>
+                <option value="Chery Tiggo 8 Pro">Chery Tiggo 8 Pro</option>
+                <option value="BYD Han EV">BYD Han EV</option>
+                <option value="BYD Song Plus EV">BYD Song Plus EV</option>
+                <option value="Kia Sorento X-Line">Kia Sorento X-Line</option>
+                <option value="Hyundai Palisade">Hyundai Palisade</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="userDate">Qulay sana</label>
+              <input id="userDate" type="date" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ariza yuborish</button>
+          </form>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Telefon</strong>
+                <span>+998 71 200 45 90</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Elektron pochta</strong>
+                <span>info@kronosdrive.uz</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Manzil</strong>
+                <span>Amir Temur shoh ko'chasi, 108-uy</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-calendar"></i>
+              <div>
+                <strong>Ish vaqti</strong>
+                <span>Dushanba - Yakshanba, 09:00 - 20:00</span>
+              </div>
+            </div>
+            <div class="social-row">
+              <a href="#contact" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#contact" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#contact" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#contact" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider"></div>
+
+    <section id="faq" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-pill">07 / Savollar</span>
+          <h2 class="section-title">
+            <span class="grad-text">KO'P BERILADIGAN</span>
+            <span class="outline-text">SAVOLLAR</span>
+          </h2>
+          <p class="section-desc">
+            Xarid jarayoni, kredit shartlari va servis xizmatlari bo'yicha javoblar.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Sinov haydovi qanday tashkil etiladi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Siz forma yoki tanlov paneli orqali so'rov qoldirasiz, menejerimiz vaqtni kelishadi va haydovchilik guvohnomasi asosida avtomobilni sinab ko'rishingizni tashkil qiladi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Kredit va lizing shartlari qanday?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Boshlang'ich to'lov 20% dan boshlanadi, muddat esa 12 oydan 60 oygacha tanlanadi. Ariza ko'rib chiqish tez amalga oshiriladi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Avtomobillarga rasmiy kafolat beriladimi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Ha, barcha avtomobillar modelga qarab 3 yildan 6 yilgacha yoki belgilangan kilometrgacha rasmiy kafolat bilan taqdim etiladi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Trade-in xizmati qanday ishlaydi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Mavjud avtomobilingiz texnik holati bo'yicha baholanadi va uning qiymati yangi avtomobil boshlang'ich to'loviga hisobga olinadi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Shartnoma tuzish uchun qanday hujjatlar kerak?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Pasport yoki ID karta kifoya; moliyaviy dastur tanlanganda qo'shimcha ma'lumotlar menejer tomonidan tushuntiriladi.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="oyna-1" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Chevrolet Malibu XL</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto01.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">385 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Chevrolet Malibu XL" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-car"></i></td><td>Kuzov turi</td><td>Sedan</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>2.0L Turbo</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>238 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>240 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>6.3 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-92+)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>7.4 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>9 pog'onali avtomat</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>Oldi g'ildirak (FWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>5 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>448 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>3 yil / 100 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-2" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Kia K5 GT-Line</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto02.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">410 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Kia K5 GT-Line" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-car"></i></td><td>Kuzov turi</td><td>Sedan</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>2.5L GDI</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>194 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>215 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>8.6 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-92+)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>7.1 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>8 pog'onali avtomat</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>Oldi g'ildirak (FWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>5 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>510 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>5 yil / 150 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-3" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Hyundai Tucson</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto03.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">445 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Hyundai Tucson" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-truck-monster"></i></td><td>Kuzov turi</td><td>Krossover</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>2.0L MPI</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>156 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>185 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>11.4 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-92+)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>7.8 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>6 pog'onali avtomat</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>To'liq g'ildirak (AWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>5 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>539 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>5 yil / 100 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-4" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Chery Tiggo 8 Pro</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto04.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">398 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Chery Tiggo 8 Pro" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-truck-monster"></i></td><td>Kuzov turi</td><td>Krossover</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>1.6L TGDI</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>197 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>205 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>8.9 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-95)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>7.6 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>7 pog'onali robot</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>Oldi g'ildirak (FWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>7 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>480 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>5 yil / 150 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-5" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>BYD Han EV</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto05.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">465 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="BYD Han EV" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-charging-station"></i></td><td>Kuzov turi</td><td>Elektr sedan</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Batareya sig'imi</td><td>85.4 kWh Blade</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Quvvat</td><td>245 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>185 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>7.9 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-charging-station"></i></td><td>Yoqilg'i turi</td><td>Elektr</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Zaryad masofasi</td><td>605 km (CLTC)</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>1 bosqichli reduktor</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>Oldi g'ildirak (FWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>5 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>410 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>6 yil / 150 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-6" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>BYD Song Plus EV</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto06.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">362 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="BYD Song Plus EV" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-charging-station"></i></td><td>Kuzov turi</td><td>Elektr krossover</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Batareya sig'imi</td><td>71.8 kWh Blade</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Quvvat</td><td>204 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>175 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>8.5 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-charging-station"></i></td><td>Yoqilg'i turi</td><td>Elektr</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Zaryad masofasi</td><td>520 km (CLTC)</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>1 bosqichli reduktor</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>Oldi g'ildirak (FWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>5 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>574 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>6 yil / 150 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-7" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Kia Sorento X-Line</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto07.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">535 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Kia Sorento X-Line" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-car-side"></i></td><td>Kuzov turi</td><td>Jip</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>2.5L Turbo</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>281 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>210 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>7.4 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-92+)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>8.6 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>8 pog'onali robot</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>To'liq g'ildirak (AWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>7 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>616 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>5 yil / 150 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="oyna-8" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3>Hyundai Palisade</h3>
+        <a href="#cars" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img src="imgs/avto08.jpg" alt="rasm" loading="lazy">
+          <div class="modal-price">640 000 000 so'm</div>
+          <div class="modal-btns">
+            <button type="button" class="btn btn-primary" data-name="Hyundai Palisade" onclick="addCar(this)">Sinov haydovi</button>
+            <a href="#cars" class="btn btn-ghost">Yopish</a>
+          </div>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr><td><i class="fa-solid fa-car-side"></i></td><td>Kuzov turi</td><td>Jip</td></tr>
+            <tr><td><i class="fa-solid fa-calendar"></i></td><td>Ishlab chiqarilgan yil</td><td>2025</td></tr>
+            <tr><td><i class="fa-solid fa-gauge-high"></i></td><td>Dvigatel</td><td>3.5L V6</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>Quvvat</td><td>277 o.k.</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Maksimal tezlik</td><td>210 km/soat</td></tr>
+            <tr><td><i class="fa-solid fa-bolt"></i></td><td>0-100 km/soat tezlanish</td><td>8.1 soniya</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>Yoqilg'i turi</td><td>Benzin (AI-92+)</td></tr>
+            <tr><td><i class="fa-solid fa-gas-pump"></i></td><td>O'rtacha sarf</td><td>10.2 L/100km</td></tr>
+            <tr><td><i class="fa-solid fa-gears"></i></td><td>Uzatmalar qutisi</td><td>8 pog'onali avtomat</td></tr>
+            <tr><td><i class="fa-solid fa-road"></i></td><td>Yuritma</td><td>To'liq g'ildirak (AWD)</td></tr>
+            <tr><td><i class="fa-solid fa-users-line"></i></td><td>O'rindiqlar soni</td><td>7 ta</td></tr>
+            <tr><td><i class="fa-solid fa-palette"></i></td><td>Bagaj hajmi</td><td>704 litr</td></tr>
+            <tr><td><i class="fa-solid fa-shield-halved"></i></td><td>Kafolat</td><td>5 yil / 100 000 km</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <aside id="cart" class="cart-panel">
+    <div class="cart-head">
+      <h3>Tanlangan avtomobillar</h3>
+      <button type="button" class="cart-close" onclick="toggleMenu('cart')">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-body">
+      <div class="cart-summary">
+        <span>Tanlangan avtomobillar:</span>
+        <strong id="carTotal">0 ta</strong>
+      </div>
+      <p class="cart-note">
+        Tanlagan avtomobillaringiz uchun so'rov yuboring, menejer siz bilan bog'lanadi
+      </p>
+      <button type="button" class="btn btn-primary cart-submit" onclick="sendRequest()">So'rov yuborish</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" onclick="toggleMenu('cart')"></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="logo">
+            <i class="fa-solid fa-car-side"></i>
+            <span>KRONOS DRIVE</span>
+          </a>
+          <p>
+            Zamonaviy avtomobillar savdosi, sinov haydovi va moliyaviy yechimlar markazi.
+          </p>
+          <div class="social-row">
+            <a href="#contact" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#contact" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#contact" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#contact" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigatsiya</h4>
+          <a href="#hero">Bosh sahifa</a>
+          <a href="#cars">Avtomobillar</a>
+          <a href="#compare">Taqqoslash</a>
+          <a href="#finance">Qulay to'lov</a>
+          <a href="#process">Jarayon</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Yordam</h4>
+          <a href="#reviews">Mijozlar fikri</a>
+          <a href="#contact">Sinov haydovi</a>
+          <a href="#faq">Savollar va javoblar</a>
+          <a href="#finance">Kredit va lizing</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Aloqa</h4>
+          <a href="tel:+998712004590">+998 71 200 45 90</a>
+          <a href="mailto:info@kronosdrive.uz">info@kronosdrive.uz</a>
+          <span>Amir Temur shoh ko'chasi, 108-uy</span>
+          <span>09:00 - 20:00, har kuni</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>KRONOS DRIVE. Barcha huquqlar himoyalangan.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="notes" class="notes"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
